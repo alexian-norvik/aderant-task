@@ -96,27 +96,6 @@ Our approach generates pandas code, executes it, and uses the **actual results**
 - Support for complex aggregations and multi-table queries
 - Transparent and verifiable results
 
-## Assumptions and Limitations
-
-### Assumptions
-- All data fits in memory (no scaling needed)
-- Excel files follow the expected schema
-- Dates are in standard formats
-
-### Limitations
-- **Single-turn queries**: No conversation memory across questions
-- **Code execution errors**: Some complex queries may fail and need rephrasing
-- **No fuzzy matching**: Client names must be spelled exactly
-- **Limited validation**: Generated code is validated for safety but not semantic correctness
-- **No caching**: Each question triggers new API calls
-
-### Potential Improvements
-- Add conversation history for follow-up questions
-- Implement query caching for repeated questions
-- Add fuzzy matching for entity names
-- Support more complex date range queries
-- Add support for exporting results
-
 ## Project Structure
 
 ```
